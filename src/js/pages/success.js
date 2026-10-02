@@ -1,3 +1,4 @@
+
 import "../../css/style.css";
 
 const container =
@@ -32,7 +33,7 @@ function renderSuccess() {
         </p>
 
         <a
-          href="/src/js/pages/products/"
+          href="/products/"
           class="continue-shopping"
         >
           Continue Shopping
@@ -133,7 +134,7 @@ function renderSuccess() {
       </div>
 
       <a
-        href="/src/js/pages/products/"
+        href="/products/"
         class="continue-shopping"
       >
         Continue Shopping
@@ -144,3 +145,4 @@ function renderSuccess() {
 }
 
 renderSuccess();
+

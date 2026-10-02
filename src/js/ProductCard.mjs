@@ -1,9 +1,10 @@
+
 export function createProductCard(product) {
   return `
     <article class="product-card">
 
       <a
-        href="/src/js/pages/product/?id=${product.id}"
+        href="/product/?id=${product.id}"
         class="product-card-link"
       >
 
@@ -32,3 +33,4 @@ export function createProductCard(product) {
     </article>
   `;
 }
+

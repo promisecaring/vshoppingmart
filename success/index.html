@@ -6,10 +6,10 @@
 
   <meta
     name="description"
-    content="Your VshoppingMart shopping cart."
+    content="Your VshoppingMart order confirmation."
   >
 
-  <title>Shopping Cart | VshoppingMart</title>
+  <title>Order Successful | VshoppingMart</title>
 </head>
 
 <body>
@@ -29,11 +29,11 @@
             Home
           </a>
 
-          <a href="/src/js/pages/products/">
+          <a href="/products/">
             Products
           </a>
 
-          <a href="/src/js/pages/cart/">
+          <a href="/cart/">
             Cart
             <span class="cart-count">0</span>
           </a>
@@ -44,12 +44,10 @@
     </header>
 
     <main>
-      <section class="cart-section">
+      <section class="success-section">
 
-        <h1>Your Shopping Cart</h1>
-
-        <div id="cart-container">
-          <p>Loading cart...</p>
+        <div id="success-container">
+          <p>Loading order...</p>
         </div>
 
       </section>
@@ -65,7 +63,7 @@
 
   <script
     type="module"
-    src="/src/js/pages/cart.js"
+    src="/success.js"
   ></script>
 
 </body>

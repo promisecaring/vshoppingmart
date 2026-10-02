@@ -1,3 +1,4 @@
+
 import "../css/style.css";
 import ProductList from "./ProductList.mjs";
 
@@ -14,8 +15,8 @@ app.innerHTML = `
 
       <nav class="site-nav" aria-label="Main navigation">
         <a href="/">Home</a>
-        <a href="/src/js/pages/products/">Products</a>
-        <a href="/src/pages/cart/" class="cart-link">
+        <a href="/products/">Products</a>
+        <a href="/cart/" class="cart-link">
           Cart <span class="cart-count">0</span>
         </a>
       </nav>
@@ -43,7 +44,7 @@ async function loadProduct() {
       document.querySelector("#product-detail").innerHTML = `
         <h1>Product ID Missing</h1>
         <p>No product ID was provided.</p>
-        <a href="/src/js/pages/products/">Back to Products</a>
+        <a href="/products/">Back to Products</a>
       `;
       return;
     }
@@ -61,7 +62,7 @@ async function loadProduct() {
       document.querySelector("#product-detail").innerHTML = `
         <h1>Product Not Found</h1>
         <p>We could not find product ${productId}.</p>
-        <a href="/src/js/pages/products/">Back to Products</a>
+        <a href="/products/">Back to Products</a>
       `;
       return;
     }
@@ -75,7 +76,7 @@ async function loadProduct() {
     document.querySelector("#product-detail").innerHTML = `
       <h1>Unable to Load Product</h1>
       <p>Please try again later.</p>
-      <a href="/src/js/pages/products/">Back to Products</a>
+      <a href="/products/">Back to Products</a>
     `;
   }
 }
@@ -121,7 +122,7 @@ function renderProduct(product) {
         <p id="cart-message" class="cart-message"></p>
 
         <a
-          href="/src/js/pages/products/"
+          href="/products/"
           class="back-to-products"
         >
           ← Back to Products
@@ -188,3 +189,4 @@ function updateCartCount() {
 
 updateCartCount();
 loadProduct();
+

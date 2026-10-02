@@ -1,3 +1,4 @@
+
 import "../../css/style.css";
 
 const checkoutContainer =
@@ -49,7 +50,7 @@ function renderCheckout() {
         </p>
 
         <a
-          href="/src/js/pages/products/"
+          href="/products/"
           class="continue-shopping"
         >
           Continue Shopping
@@ -270,7 +271,7 @@ function handleCheckout(event) {
   );
 
   window.location.href =
-    "/src/js/pages/success/";
+    "/success/";
 }
 
 renderCheckout();

@@ -1,3 +1,4 @@
+
 import "../../css/style.css";
 import ExternalServices from "../ExternalServices.mjs";
 
@@ -12,16 +13,20 @@ app.innerHTML = `
       </a>
 
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="/">Home</a>
 
-        <a href="/src/js/pages/products/">
+        <a href="/">
+          Home
+        </a>
+
+        <a href="/products/">
           Products
         </a>
 
-        <a href="/src/js/pages/cart/">
+        <a href="/cart/">
           Cart
           <span class="cart-count">0</span>
         </a>
+
       </nav>
 
     </div>
@@ -60,7 +65,7 @@ async function loadProduct() {
         No product ID was provided.
       </p>
 
-      <a href="/src/js/pages/products/">
+      <a href="/products/">
         Return to Products
       </a>
     `;
@@ -89,7 +94,7 @@ async function loadProduct() {
         Please try again later.
       </p>
 
-      <a href="/src/js/pages/products/">
+      <a href="/products/">
         Return to Products
       </a>
     `;
@@ -162,7 +167,7 @@ function renderProduct(product) {
         <p id="cart-message"></p>
 
         <a
-          href="/src/js/pages/products/"
+          href="/products/"
           class="back-to-products"
         >
           ← Back to Products
@@ -273,3 +278,4 @@ function updateCartCount() {
 }
 
 loadProduct();
+

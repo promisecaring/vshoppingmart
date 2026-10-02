@@ -1,3 +1,4 @@
+
 import "../../css/style.css";
 
 console.log("VSHOPPINGMART CART.JS LOADED");
@@ -35,7 +36,7 @@ function renderCart() {
         </p>
 
         <a
-          href="/src/js/pages/products/"
+          href="/products/"
           class="continue-shopping"
         >
           Continue Shopping
@@ -165,14 +166,14 @@ function renderCart() {
       </div>
 
       <a
-        href="/src/js/pages/checkout/"
+        href="/checkout/"
         class="checkout-btn"
       >
         Proceed to Checkout
       </a>
 
       <a
-        href="/src/js/pages/products/"
+        href="/products/"
         class="continue-shopping"
       >
         ← Continue Shopping
@@ -328,3 +329,4 @@ function updateCartCount(cart) {
 }
 
 renderCart();
+

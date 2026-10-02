@@ -19,11 +19,11 @@ app.innerHTML = `
           Home
         </a>
 
-        <a href="/src/js/pages/products/">
+        <a href="/products/">
           Products
         </a>
 
-        <a href="/src/js/pages/cart/">
+        <a href="/cart/">
           Cart
           <span class="cart-count">0</span>
         </a>
@@ -57,7 +57,7 @@ app.innerHTML = `
         </p>
 
         <a
-          href="/src/js/pages/products/"
+          href="/products/"
           class="hero-button"
         >
           Shop Now
@@ -100,7 +100,7 @@ app.innerHTML = `
       <div class="view-all-products">
 
         <a
-          href="/src/js/pages/products/"
+          href="/products/"
           class="checkout-btn"
         >
           View All Products
@@ -345,7 +345,7 @@ app.innerHTML = `
       </p>
 
       <a
-        href="/src/js/pages/products/"
+        href="/products/"
         class="hero-button"
       >
         Explore Products
@@ -469,3 +469,4 @@ function updateCartCount() {
    ============================== */
 
 loadFeaturedProducts();
+

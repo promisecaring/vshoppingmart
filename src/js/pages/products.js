@@ -1,4 +1,7 @@
+
 import "../../css/style.css";
+import "../ProductList.mjs";
+
 import ProductList from "../ProductList.mjs";
 
 const app = document.querySelector("#app");
@@ -17,11 +20,11 @@ app.innerHTML = `
           Home
         </a>
 
-        <a href="/src/js/pages/products/">
+        <a href="/products/">
           Products
         </a>
 
-        <a href="/src/js/pages/cart/">
+        <a href="/cart/">
           Cart
           <span class="cart-count">0</span>
         </a>
@@ -381,3 +384,4 @@ function updateCartCount() {
    ============================== */
 
 loadProducts();
+
