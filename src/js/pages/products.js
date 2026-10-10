@@ -10,11 +10,17 @@ app.innerHTML = `
   <header class="site-header">
     <div class="header-container">
 
-      <a href="/" class="logo">
-        VshoppingMart
-      </a>
+<a href="/" class="logo" aria-label="VshoppingMart Home">
+  <img
+    src="/logo.svg"
+    alt="VshoppingMart"
+    width="210"
+    height="55"
+    style="display: block; width: 210px; max-width: 100%; height: auto;"
+  />
+</a>
 
-      <nav class="site-nav" aria-label="Main navigation">
+<nav class="site-nav" aria-label="Main navigation">
 
         <a href="/">
           Home
@@ -24,10 +30,11 @@ app.innerHTML = `
           Products
         </a>
 
-        <a href="/cart/">
-          Cart
-          <span class="cart-count">0</span>
-        </a>
+       <a href="/cart/" class="cart-link">
+  <span class="cart-icon" aria-hidden="true">🛒</span>
+  <span>Cart</span>
+  <span class="cart-count">0</span>
+</a>
 
       </nav>
 

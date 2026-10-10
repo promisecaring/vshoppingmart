@@ -1497,3 +1497,153 @@ input:focus-visible {
     justify-content: center;
   }
 }
+
+
+/* Shopping cart navigation icon */
+.cart-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  text-decoration: none;
+}
+
+.cart-icon {
+  width: 23px;
+  height: 23px;
+  color: #17834B;
+  flex-shrink: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.cart-link:hover .cart-icon {
+  color: #F28C28;
+  transform: translateY(-2px);
+}
+
+
+
+/* VshoppingMart trolley and cart navigation */
+.site-nav .cart-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav .cart-icon {
+  display: inline-block;
+  font-size: 23px;
+  line-height: 1;
+  color: #17834B;
+  transition: transform 0.2s ease;
+}
+
+.site-nav .cart-link:hover .cart-icon {
+  transform: translateY(-2px);
+}
+
+.site-nav .cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 50%;
+  background: #F28C28;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+/* ATM card payment demonstration */
+.atm-demo {
+  margin-top: 28px;
+  padding: 22px;
+  border: 1px solid #dce5df;
+  border-radius: 16px;
+  background: #f7faf8;
+}
+
+.demo-notice,
+.demo-security {
+  color: #53645a;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.demo-card {
+  max-width: 360px;
+  min-height: 190px;
+  margin: 18px auto 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  color: white;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #176b46, #102d23);
+  box-shadow: 0 8px 20px #102d2326;
+}
+
+.demo-card-top,
+.demo-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.demo-card-number {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  overflow-wrap: anywhere;
+}
+
+.demo-card-bottom small {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.65rem;
+  opacity: 0.75;
+}
+
+.demo-card-bottom div div {
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
+.chip-icon {
+  font-size: 1.8rem;
+}
+
+.card-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.atm-demo input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .atm-demo {
+    padding: 14px;
+  }
+
+  .demo-card {
+    padding: 18px;
+  }
+
+  .card-fields {
+    gap: 10px;
+  }
+}

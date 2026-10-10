@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 
   <meta
     name="description"
-    content="Your VshoppingMart order confirmation."
-  >
+    content="Your VshoppingMart order confirmation.">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <title>Order Successful | VshoppingMart</title>
 </head>
@@ -19,9 +21,17 @@
     <header class="site-header">
       <div class="header-container">
 
-        <a href="/" class="logo">
-          VshoppingMart
-        </a>
+        
+<a href="/" class="logo" aria-label="VshoppingMart Home">
+  <img
+    src="/logo.svg"
+    alt="VshoppingMart"
+    width="210"
+    height="55"
+    style="display: block; width: 210px; max-width: 100%; height: auto;"
+  />
+</a>
+
 
         <nav class="site-nav" aria-label="Main navigation">
 
@@ -33,10 +43,11 @@
             Products
           </a>
 
-          <a href="/cart/">
-            Cart
-            <span class="cart-count">0</span>
-          </a>
+          <a href="/cart/" class="cart-link">
+  <span class="cart-icon" aria-hidden="true">🛒</span>
+  <span>Cart</span>
+  <span class="cart-count">0</span>
+</a>
 
         </nav>
 
